@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TimeController {
 
    
-    @RequestMapping(value = "/", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/utc", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
    
     public @ResponseBody Time UtcTimeService(@DateTimeFormat(pattern = "HH:mm") @RequestParam("time") LocalTime time,
 
