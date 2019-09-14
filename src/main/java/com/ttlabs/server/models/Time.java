@@ -2,6 +2,7 @@ package com.ttlabs.server.models;
 
 import java.time.LocalTime;
 
+
 public class Time {
 
 	LocalTime time;

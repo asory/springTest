@@ -44,7 +44,7 @@ public class TimeController {
     public static LocalTime toUtcLocalTime(LocalTime time, int timezone) {
 
         /* "Current  time in a particular timezone : " */
-        ZoneId zone = ZoneId.of("UTC" + timezone);
+        ZoneId zone = ZoneId.of((timezone>0)? "UTC+" + timezone : "UTC" + timezone);
         ZonedDateTime zoneTime = time.atDate(LocalDate.now()).atZone(zone);
 
         /* "Current  time in utc : " */
